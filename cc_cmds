@@ -7,3 +7,5 @@ rm index.html
 git clone https://www.github.com/lolzhub/cc
 mv cc/* ./
 rm -rf cc
+
+//inst id: ...76

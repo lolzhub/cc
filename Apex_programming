@@ -51,10 +51,10 @@ public class Deletee {
     CC_practical acc = new CC_practical();
     acc.CreateAccount('lolzhub', '6969696969');   //please add your name/number
     
-  check the open log box and execute
-  Below execution log there are 4 check boxes, check 'Debug Only' to see msg
-  Below that open Query Editor and execute the following:
-    >>>select Name, Phone from Account
+  Check the open log box and execute
+  	Below execution log there are 4 check boxes, check 'Debug Only' to see msg
+  	Below that open Query Editor and execute the following:
+  	>>>select Name, Phone from Account
 
 9. To update data:
     Select Updatee.apxc file and go to debug and choose 'Open Execute Anonymous Window' and write the below lines:
@@ -68,7 +68,7 @@ public class Deletee {
 10. To delete data:
     Select Deletee.apxc file and go to debug and choose 'Open Execute Anonymous Window' and write the below lines:
       Deletee acc = new Deletee();
-      acc.delAcc('lolzhub');
+      acc.delAcc();
       
       Below execution log there are 4 check boxes, check 'Debug Only' to see msg
       Open Query Editor and execute the following to see update:

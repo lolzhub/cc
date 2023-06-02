@@ -8,7 +8,11 @@
    You have to create 3 files named as: CC_practical, Updatee, Deletee 
    }
    
-4. Add this code in CC_practical:
+*******4. Very Very Important step! SAVE all the files before proceeding********
+
+//-----------------------------------------------------------------------------------------------------------------
+   
+5. Add this code in CC_practical:
   public class CC_practical {
     public void CreateAccount(String Name, String Phone){
         account acc = new account();
@@ -19,7 +23,20 @@
     }
 }
 
-5. Add this code in Updatee:
+
+6. To add data and to read data:
+  Select CC_practical.apxc file and go to debug and choose 'Open Execute Anonymous Window' and write the below lines:
+    CC_practical acc = new CC_practical();
+    acc.CreateAccount('lolzhub', '6969696969');   //please add your name/number
+    
+  Check the open log box and execute
+  	Below execution log there are 4 check boxes, check 'Debug Only' to see msg
+  	Below that open Query Editor and execute the following:
+  	>>>select Name, Phone from Account
+	
+//-----------------------------------------------------------------------------------------------------------------
+
+7. Add this code in Updatee:
 public class Updatee {
     public void UpdateAcc(String Name){
         List<Account> oldAcc = new List<Account>();
@@ -32,7 +49,18 @@ public class Updatee {
     }
 }
 
-6. Add this code in Deletee:
+8. To update data:
+    Select Updatee.apxc file and go to debug and choose 'Open Execute Anonymous Window' and write the below lines:
+      Updatee acc = new Updatee();
+      acc.UpdateAcc('lolzhub');
+      
+      Below execution log there are 4 check boxes, check 'Debug Only' to see msg
+      Open Query Editor and execute the following to see update:
+      >>>select Name, Phone from Account
+      
+ //-----------------------------------------------------------------------------------------------------------------
+
+9. Add this code in Deletee:
 public class Deletee {
     public void delAcc(){
 		List<Account> oldAcc = new List<Account>();
@@ -44,27 +72,6 @@ public class Deletee {
     }
 }
 
-***7. Very Very Important step! SAVE all the files before proceeding
-
-8. To add data and to read data:
-  Select CC_practical.apxc file and go to debug and choose 'Open Execute Anonymous Window' and write the below lines:
-    CC_practical acc = new CC_practical();
-    acc.CreateAccount('lolzhub', '6969696969');   //please add your name/number
-    
-  Check the open log box and execute
-  	Below execution log there are 4 check boxes, check 'Debug Only' to see msg
-  	Below that open Query Editor and execute the following:
-  	>>>select Name, Phone from Account
-
-9. To update data:
-    Select Updatee.apxc file and go to debug and choose 'Open Execute Anonymous Window' and write the below lines:
-      Updatee acc = new Updatee();
-      acc.UpdateAcc('lolzhub');
-      
-      Below execution log there are 4 check boxes, check 'Debug Only' to see msg
-      Open Query Editor and execute the following to see update:
-      >>>select Name, Phone from Account
-     
 10. To delete data:
     Select Deletee.apxc file and go to debug and choose 'Open Execute Anonymous Window' and write the below lines:
       Deletee acc = new Deletee();
@@ -73,7 +80,9 @@ public class Deletee {
       Below execution log there are 4 check boxes, check 'Debug Only' to see msg
       Open Query Editor and execute the following to see update:
       >>>select Name, Phone from Account
-      
+
+//-----------------------------------------------------------------------------------------------------------------
+     
  11. Enjoy!
      
      //aHR0cHM6Ly9haXNzbXNjb2VwdW5lLWRldi1lZC5kZXZlbG9wLm15LnNhbGVzZm9yY2UuY29tLwphZGVlQGFpc3Ntcy5jb20KYlhsellXeGxNVEF4
